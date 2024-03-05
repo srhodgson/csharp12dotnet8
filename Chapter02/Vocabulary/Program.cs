@@ -11,6 +11,11 @@
 //Console.WriteLine("Temperature on {0:D} is {1}°", DateTime.Today, 23.4);
 using System.Reflection; // To use Assembly, TypeName, and so on.
 
+// Declare some unused variables using types in
+// additional assemblies to make them load too
+System.Data.DataSet ds = new();
+HttpClient client = new();
+
 // Get the assembly that is the entry point for this app
 Assembly? myApp = Assembly.GetEntryAssembly();
 
